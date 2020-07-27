@@ -1,0 +1,54 @@
+<!--
+	Standalone React 
+	
+	lets the browser convert the JSX to JavaScript without transpiling with Node. Do not deploy with this method, it is not fast and does not have access to all the additional libraries etc... (only for initial testing). 
+	
+	This code was found on https://www.tutorialspoint.com/standalone-react-js-basic-example
+	
+	Sean Campbell, 7.19.2020
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+<title>React Example</title>
+
+<script type="text/babel">
+   function Player(){
+	  return(
+		 <div className="player">
+			<h1>Steve</h1>
+			<p>My hobby: Cricket (REACT)</p>
+		 </div>
+	  );
+   }
+   ReactDOM.render(<Player/>,document.querySelector('#first'));
+</script>
+
+<style>
+   .player{
+      border:1px solid #eee;
+      width:200px;
+      box-shadow:0 2px 2px #ccc;
+      padding: 22px;
+      display:inline-block;
+      margin:10px;
+   }
+</style>
+</head>
+<body>
+
+	<div id="first"></div>
+	
+	<div class="player">
+		<h1>David</h1>
+		<p>My hobby: Cricket (NoREACT)</p>
+	</div>
+	
+</body>
+</html>
