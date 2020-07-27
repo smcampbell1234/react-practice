@@ -1,0 +1,68 @@
+<!--
+	Standalone React App lets the browser convert the JSX to JavaScript without transpiling with Node. Do not deploy to public with this method, it is not fast and does not have access to all the additional libraries etc... (only for initial testing).
+
+	This code was found on 
+	Book "Learning React: A hands-On Guide to Building Web Applications Using REact and Redux" 2nd Ed. (2018) by Kirupa Chinnathambi
+	
+	Sean Campbell, 7.19.2020	
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<!-- Load React. -->
+	<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+	<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+	<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+	
+	<script type="text/babel">
+	class Letter extends React.Component{
+		render(){
+			var letterStyle = {
+					padding: 10,
+					margin: 10,
+					backgroundColor: this.props.bgcolor,
+					color: "#333",
+					display: "inline-block",
+					fontFamily: "monospace",
+					fontSize: 32,
+					textAlign: "center"
+					};
+					
+			return(
+				<div style = {letterStyle}>
+					{this.props.children}
+				</div>
+			);
+		}
+	}
+	
+	ReactDOM.render(
+		<div>
+			<Letter bgcolor="#58B3FF">A</Letter>
+			<Letter bgcolor="#FF605F">E</Letter>
+			<Letter bgcolor="#FFD52E">I</Letter>
+			<Letter bgcolor="#49DD8E">O</Letter>
+			<Letter bgcolor="#AE99FF">U</Letter>
+		</div>,
+		document.querySelector("#root")
+	)
+	</script>
+	
+	<style>
+	#root{
+		padding: 50px;
+		background-color: #FFF;
+	}
+	</style>
+
+</head>
+<body>	
+	<div id="root"></div>
+</body>
+</html>
