@@ -1,6 +1,20 @@
       [
         {
           "employee_name" : "DiStefano, Cheryl",
+          "employee_id" : "5ba2b5c603a80ca701288a2c", 
+          "start_datetime" : "2013-07-01T09:00:00.000+0000",
+          "end_datetime" : "2013-07-01T15:00:00.000+0000",
+          "cancel_reason" : "107",
+          "occupation" : "MA-RN",
+          "billing":{"rate" : "2.0"},
+          "adjustment" : "0.0",
+          "adj_reason" : "null",
+          "_employee_no" : "27",
+          "notes" : "Needham"
+        },
+         {
+          "employee_name" : "blank",
+          "employee_id" : "null", 
           "start_datetime" : "2013-07-01T09:00:00.000+0000",
           "end_datetime" : "2013-07-01T15:00:00.000+0000",
           "cancel_reason" : "107",
