@@ -1,30 +1,12 @@
 { 
-    "_id" : "5ba2b5c903a80ca701288d33"  , 
-    "shift_week" : "26", 
-    "_shift_no" : "89", 
-    "_shift_xid" : "dev_mass-89", 
-    "occupation" : "MA-RN", 
-    "employee_id" : "5ba2b5c603a80ca701288a2c", 
-    "_slot" : "9:00a-3:00p", 
-    "_employee_no" : "27", 
-    "_customer_no" : "208", 
-    "_inserted" : "2018-09-22T08:47:54.616+0000", 
-    "cancel_reason" : "107", 
-    "facility_name" : "Charles River Center Needham", 
-    "payroll" : {
-        "rate" : "0.0",
-        "adjustment" : "0.0",
-        "adj_reason" : "null"
-    }, 
-    "facility_id" : "5ba2b5bb03a80ca701283a8c", 
-    "employee_name" : "DiStefano, Cheryl", 
-    "shift" : {
-        "slot" : "1", 
-        "day_of" : "2013182", 
-        "start_datetime" : "2013-07-01T09:00:00.000+0000", 
-        "end_datetime" : "2013-07-01T15:00:00.000+0000" 
-    }, 
-    "notes" : "Needham", 
-    "region" : "dev_mass-W", 
-    "shift_type" : "0"
+    "employee_name" : "DiStefano, Cheryl",
+    "start_datetime" : "2013-07-01T09:00:00.000+0000", 
+    "end_datetime" : "2013-07-01T15:00:00.000+0000", 
+    "cancel_reason" : "107",
+    "occupation" : "MA-RN",
+    "rate" : "0.0",
+    "adjustment" : "0.0",
+    "adj_reason" : "null",
+    "_employee_no" : "27",
+    "notes" : "Needham"
 }
